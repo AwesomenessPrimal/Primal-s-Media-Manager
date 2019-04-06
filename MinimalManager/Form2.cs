@@ -133,7 +133,7 @@ namespace PrimalMediaManager
                 }
                 else
                 {
-                    notifyIcon1.BalloonTipText = "Please make sure the URL is valid.";
+                    notifyIcon1.BalloonTipText = "Please make sure the URL is valid. If this keeps up, notify the developer.";
                     notifyIcon1.BalloonTipTitle = "Failed to Download";
                     notifyIcon1.BalloonTipIcon = ToolTipIcon.Error;
                     notifyIcon1.ShowBalloonTip(5);

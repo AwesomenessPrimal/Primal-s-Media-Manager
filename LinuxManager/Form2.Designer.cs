@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -50,7 +49,6 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.convertOpen = new System.Windows.Forms.OpenFileDialog();
             this.convertSave = new System.Windows.Forms.SaveFileDialog();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -250,12 +248,6 @@
             // 
             this.convertOpen.FileName = "openFileDialog1";
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Primal\'s Media Manager";
-            this.notifyIcon1.Visible = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,6 +290,5 @@
         private System.Windows.Forms.MaskedTextBox endBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimalMediaManager", "Prima
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalManager", "MinimalManager\MinimalManager.csproj", "{E2DD7FB8-9A0A-43E0-B3EA-D185FD604A23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinuxManager", "LinuxManager\LinuxManager.csproj", "{613EE32E-E846-4484-88FB-03BB5EEB633A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E2DD7FB8-9A0A-43E0-B3EA-D185FD604A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2DD7FB8-9A0A-43E0-B3EA-D185FD604A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2DD7FB8-9A0A-43E0-B3EA-D185FD604A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613EE32E-E846-4484-88FB-03BB5EEB633A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613EE32E-E846-4484-88FB-03BB5EEB633A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613EE32E-E846-4484-88FB-03BB5EEB633A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613EE32E-E846-4484-88FB-03BB5EEB633A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
