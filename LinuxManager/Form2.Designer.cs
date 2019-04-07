@@ -1,4 +1,4 @@
-﻿namespace PrimalMediaManager
+﻿namespace LinuxManager
 {
     partial class Form2
     {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 
-namespace PrimalMediaManager
+namespace LinuxManager
 {
     public partial class Form2 : Form
     {
