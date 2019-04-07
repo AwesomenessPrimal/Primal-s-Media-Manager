@@ -160,38 +160,42 @@ namespace PrimalMediaManager
             }
         }
 
-        private void convertButton_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var input = convertOpen.ShowDialog();
-            if (input == DialogResult.Cancel)
+            if (tabControl1.SelectedIndex == 1)
             {
-                //Stops
-            }
-            else
-            {
-                var output = convertSave.ShowDialog();
-                if (output == DialogResult.Cancel)
+                tabControl1.SelectedIndex = 0;
+                var input = convertOpen.ShowDialog();
+                if (input == DialogResult.Cancel)
                 {
-
+                    //Stops
                 }
                 else
                 {
-                    //Command still a work in progress
-                    System.Diagnostics.Process process = new System.Diagnostics.Process();
-                    System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-                    startInfo.FileName = "cmd.exe";
-                    //Command that converts. Do not modify.
-                    startInfo.Arguments = "/c ffmpeg.exe -i " + "\"" + convertOpen.FileName + "\"" + " " + "\"" + convertSave.FileName + "\"";
-                    process.StartInfo = startInfo;
-                    process.Start();
-                    process.WaitForExit();
-                    if (File.Exists(convertSave.FileName))
+                    var output = convertSave.ShowDialog();
+                    if (output == DialogResult.Cancel)
                     {
-                        linuxNotify("File Converted", "Your file has successfully been converted.", true);
+
                     }
                     else
                     {
-                        linuxNotify("Failed to Convert", "Is the file a supported video or audio type?", false);
+                        //Command still a work in progress
+                        System.Diagnostics.Process process = new System.Diagnostics.Process();
+                        System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+                        startInfo.FileName = "cmd.exe";
+                        //Command that converts. Do not modify.
+                        startInfo.Arguments = "/c ffmpeg.exe -i " + "\"" + convertOpen.FileName + "\"" + " " + "\"" + convertSave.FileName + "\"";
+                        process.StartInfo = startInfo;
+                        process.Start();
+                        process.WaitForExit();
+                        if (File.Exists(convertSave.FileName))
+                        {
+                            linuxNotify("File Converted", "Your file has successfully been converted.", true);
+                        }
+                        else
+                        {
+                            linuxNotify("Failed to Convert", "Is the file a supported video or audio type?", false);
+                        }
                     }
                 }
             }

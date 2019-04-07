@@ -47,15 +47,16 @@
             this.fileBox = new System.Windows.Forms.TextBox();
             this.urlBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.convertOpen = new System.Windows.Forms.OpenFileDialog();
-            this.convertSave = new System.Windows.Forms.SaveFileDialog();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.convertOpen = new System.Windows.Forms.OpenFileDialog();
+            this.convertSave = new System.Windows.Forms.SaveFileDialog();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,6 +68,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -74,6 +76,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(381, 241);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -257,16 +260,6 @@
             this.tabPage2.Text = "About";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // convertOpen
-            // 
-            this.convertOpen.FileName = "openFileDialog1";
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Primal\'s Media Manager";
-            this.notifyIcon1.Visible = true;
-            // 
             // tableLayoutPanel
             // 
             this.tableLayoutPanel.ColumnCount = 2;
@@ -342,6 +335,29 @@
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Made using:\r\nyoutube-dl\r\nffmpeg\r\nbuntifu\r\nMaterialSkin\r\nMetroFramework";
             // 
+            // convertOpen
+            // 
+            this.convertOpen.Title = "Choose file to convert";
+            // 
+            // convertSave
+            // 
+            this.convertSave.Title = "Choose where to save converted file";
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Primal\'s Media Manager";
+            this.notifyIcon1.Visible = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(373, 215);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Convert";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,5 +410,6 @@
         private System.Windows.Forms.Label labelProductName;
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.TextBox textBoxDescription;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
