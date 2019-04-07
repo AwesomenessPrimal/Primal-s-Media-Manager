@@ -17,7 +17,6 @@ namespace PrimalMediaManager
         public Form1()
         {
             InitializeComponent();
-
             fileType.Items = new string[] { "mp4", "avi", "mov", "flv", "wmv" };
             fileType.selectedIndex = 0;
 
