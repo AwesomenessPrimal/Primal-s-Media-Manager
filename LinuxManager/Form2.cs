@@ -115,6 +115,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "/usr/bin/youtube-dl";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "-o " + "\"" + fileBox.Text + "." +
                     fileType.Items[fileType.SelectedIndex] + "\"" + " -f " + fileType.Items[fileType.SelectedIndex] +
                     " \"" + urlBox.Text + "\"";
@@ -136,6 +137,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "/usr/bin/youtube-dl";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "-o " + "\"" + fileBox.Text + ".m4a \"" +
                     " --extract-audio --audio-format " + fileType.Items[fileType.SelectedIndex] + " --audio-quality 0 \"" +
                     urlBox.Text + "\"";
@@ -174,9 +176,11 @@ namespace PrimalMediaManager
                 }
                 else
                 {
+                    //Command still a work in progress
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                     startInfo.FileName = "cmd.exe";
+                    //Command that converts. Do not modify.
                     startInfo.Arguments = "/c ffmpeg.exe -i " + "\"" + convertOpen.FileName + "\"" + " " + "\"" + convertSave.FileName + "\"";
                     process.StartInfo = startInfo;
                     process.Start();

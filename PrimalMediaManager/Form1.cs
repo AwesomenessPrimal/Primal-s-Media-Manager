@@ -37,11 +37,6 @@ namespace PrimalMediaManager
             return r;
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void convertStart_CheckedChanged(object sender, EventArgs e)
         {
             startBox.Visible = convertStart.Checked;
@@ -101,6 +96,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "cmd.exe";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "/c youtube-dl.exe -o " + "\"" + fileBox.Text + "." + 
                     fileType.Items[fileType.selectedIndex] + "\"" + " -f " + fileType.Items[fileType.selectedIndex] +
                     " \"" + urlBox.Text + "\"" + " --ffmpeg-location \"" + System.AppDomain.CurrentDomain.BaseDirectory;
@@ -122,6 +118,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "cmd.exe";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "/c youtube-dl.exe -o " + "\"" + fileBox.Text + ".m4a \"" + 
                     " --extract-audio --audio-format " + fileType.Items[fileType.selectedIndex] + " --audio-quality 0 \"" + 
                     urlBox.Text + "\"" + " --ffmpeg-location \"" + System.AppDomain.CurrentDomain.BaseDirectory;
@@ -168,6 +165,7 @@ namespace PrimalMediaManager
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                     startInfo.FileName = "cmd.exe";
+                    //Command that converts. Do not modify.
                     startInfo.Arguments = "/c ffmpeg.exe -i " + "\"" + convertOpen.FileName + "\"" + " " + "\"" + convertSave.FileName + "\"";
                     process.StartInfo = startInfo;
                     process.Start();

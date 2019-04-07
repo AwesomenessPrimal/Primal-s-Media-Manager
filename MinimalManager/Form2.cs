@@ -93,6 +93,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "cmd.exe";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "/c youtube-dl.exe -o " + "\"" + fileBox.Text + "." +
                     fileType.Items[fileType.SelectedIndex] + "\"" + " -f " + fileType.Items[fileType.SelectedIndex] +
                     " \"" + urlBox.Text + "\"" + " --ffmpeg-location \"" + System.AppDomain.CurrentDomain.BaseDirectory;
@@ -114,6 +115,7 @@ namespace PrimalMediaManager
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                 startInfo.FileName = "cmd.exe";
+                //Command that downloads. Do not modify.
                 startInfo.Arguments = "/c youtube-dl.exe -o " + "\"" + fileBox.Text + ".m4a \"" +
                     " --extract-audio --audio-format " + fileType.Items[fileType.SelectedIndex] + " --audio-quality 0 \"" +
                     urlBox.Text + "\"" + " --ffmpeg-location \"" + System.AppDomain.CurrentDomain.BaseDirectory;
@@ -160,6 +162,7 @@ namespace PrimalMediaManager
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
                     startInfo.FileName = "cmd.exe";
+                    //Command that converts. Do not modify.
                     startInfo.Arguments = "/c ffmpeg.exe -i " + "\"" + convertOpen.FileName + "\"" + " " + "\"" + convertSave.FileName + "\"";
                     process.StartInfo = startInfo;
                     process.Start();

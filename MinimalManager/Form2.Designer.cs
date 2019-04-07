@@ -147,6 +147,7 @@
             this.convertEnd.TabIndex = 9;
             this.convertEnd.Text = "End at Time";
             this.convertEnd.UseVisualStyleBackColor = true;
+            this.convertEnd.Visible = false;
             this.convertEnd.CheckedChanged += new System.EventHandler(this.convertEnd_CheckedChanged);
             // 
             // convertStart
@@ -159,6 +160,7 @@
             this.convertStart.TabIndex = 8;
             this.convertStart.Text = "Start at Time";
             this.convertStart.UseVisualStyleBackColor = true;
+            this.convertStart.Visible = false;
             this.convertStart.CheckedChanged += new System.EventHandler(this.convertStart_CheckedChanged);
             // 
             // downloadButton
