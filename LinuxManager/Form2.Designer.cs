@@ -45,6 +45,7 @@
             this.videoButton = new System.Windows.Forms.RadioButton();
             this.fileBox = new System.Windows.Forms.TextBox();
             this.urlBox = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
@@ -54,7 +55,6 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.convertOpen = new System.Windows.Forms.OpenFileDialog();
             this.convertSave = new System.Windows.Forms.SaveFileDialog();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -74,6 +74,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(381, 241);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -244,6 +245,15 @@
             this.urlBox.Size = new System.Drawing.Size(327, 20);
             this.urlBox.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(373, 215);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Convert";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel);
@@ -337,15 +347,6 @@
             // convertSave
             // 
             this.convertSave.Title = "Choose where to save converted file";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(373, 215);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Convert";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
