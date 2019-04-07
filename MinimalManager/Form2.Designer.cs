@@ -46,6 +46,7 @@
             this.videoButton = new System.Windows.Forms.RadioButton();
             this.fileBox = new System.Windows.Forms.TextBox();
             this.urlBox = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
@@ -56,7 +57,6 @@
             this.convertOpen = new System.Windows.Forms.OpenFileDialog();
             this.convertSave = new System.Windows.Forms.SaveFileDialog();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -249,6 +249,15 @@
             this.urlBox.Size = new System.Drawing.Size(327, 20);
             this.urlBox.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(373, 215);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Convert";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel);
@@ -337,10 +346,12 @@
             // 
             // convertOpen
             // 
+            this.convertOpen.Filter = "All files (*.*)|*.*";
             this.convertOpen.Title = "Choose file to convert";
             // 
             // convertSave
             // 
+            this.convertSave.Filter = resources.GetString("convertSave.Filter");
             this.convertSave.Title = "Choose where to save converted file";
             // 
             // notifyIcon1
@@ -348,15 +359,6 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Primal\'s Media Manager";
             this.notifyIcon1.Visible = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(373, 215);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Convert";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 

@@ -609,6 +609,9 @@
   <metadata name="convertSave.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>388, 17</value>
   </metadata>
+  <data name="convertSave.Filter" xml:space="preserve">
+    <value>MP3 (*.mp3)|*.mp3|OGG (*.ogg)|*.ogg|MPEG-4 (*.m4a)|*.m4a|Waveform Audio File (*.wav)| *.wav|MP4 (*.mp4)|*.mp4|WebM (*.webm)|*.webm|MOV (*.mov)|*.mov|Flash Video (*.flv)| *.flv|AVI (*.avi)|*.avi|FLAC Audio (*.flac)|*.flac</value>
+  </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>159, 17</value>
   </metadata>

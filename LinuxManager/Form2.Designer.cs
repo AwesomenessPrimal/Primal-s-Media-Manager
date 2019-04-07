@@ -342,10 +342,12 @@
             // 
             // convertOpen
             // 
+            this.convertOpen.Filter = "All files (*.*)|*.*";
             this.convertOpen.Title = "Choose file to convert";
             // 
             // convertSave
             // 
+            this.convertSave.Filter = resources.GetString("convertSave.Filter");
             this.convertSave.Title = "Choose where to save converted file";
             // 
             // Form2
