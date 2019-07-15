@@ -57,6 +57,7 @@
             this.convertOpen = new System.Windows.Forms.OpenFileDialog();
             this.convertSave = new System.Windows.Forms.SaveFileDialog();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.updateButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -278,6 +279,7 @@
             this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
             this.tableLayoutPanel.Controls.Add(this.labelVersion, 1, 1);
             this.tableLayoutPanel.Controls.Add(this.textBoxDescription, 1, 2);
+            this.tableLayoutPanel.Controls.Add(this.updateButton, 0, 5);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
@@ -299,8 +301,8 @@
             this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-            this.logoPictureBox.Size = new System.Drawing.Size(115, 203);
+            this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 5);
+            this.logoPictureBox.Size = new System.Drawing.Size(115, 148);
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
@@ -344,6 +346,10 @@
             this.textBoxDescription.TabStop = false;
             this.textBoxDescription.Text = "Made using:\r\nyoutube-dl\r\nffmpeg\r\nbuntifu\r\nMaterialSkin\r\nMetroFramework";
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "All files (*.*)|*.*";
+            // 
             // convertOpen
             // 
             this.convertOpen.Filter = "All files (*.*)|*.*";
@@ -359,6 +365,17 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Primal\'s Media Manager";
             this.notifyIcon1.Visible = true;
+            // 
+            // updateButton
+            // 
+            this.updateButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updateButton.Location = new System.Drawing.Point(3, 157);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(115, 49);
+            this.updateButton.TabIndex = 24;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // Form2
             // 
@@ -413,5 +430,6 @@
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button updateButton;
     }
 }

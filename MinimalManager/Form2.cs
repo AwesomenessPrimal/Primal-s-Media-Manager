@@ -188,5 +188,16 @@ namespace PrimalMediaManager
                 }
             }
         }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/c youtube-dl.exe --update";
+            process.StartInfo = startInfo;
+            process.Start();
+            process.WaitForExit();
+        }
     }
 }
